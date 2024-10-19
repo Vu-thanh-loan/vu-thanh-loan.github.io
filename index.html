@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Kích Thước Văn Bản</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <h1>Thay Đổi Kích Thước Văn Bản</h1>
+    <label for="cboCoChu">Chọn kích thước chữ:</label>
+    <select id="cboCoChu" onchange="Cochu()">
+        <option value="16px">16px</option>
+        <option value="20px">20px</option>
+        <option value="24px">24px</option>
+        <option value="28px">28px</option>
+    </select>
+
+    <label for="cboDoCao">Chọn độ cao:</label>
+    <select id="cboDoCao" onchange="DoCao()">
+        <option value="100px">100px</option>
+        <option value="150px">150px</option>
+        <option value="200px">200px</option>
+    </select>
+
+    <button onclick="TangDoCao()">Tăng Độ Cao</button>
+    <button onclick="NapTieuDe()">Nạp Tiêu Đề</button>
+
+    <div id="NoiDung" class="NoiDung">Nội dung ở đây...</div>
+
+    <script src="web.js"></script>
+</body>
+</html>
